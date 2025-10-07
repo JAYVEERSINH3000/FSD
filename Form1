@@ -1,0 +1,72 @@
+<form action="#" method="get">
+    <fieldset>
+        <legend>login</legend>
+    <label for="u">username</label>
+    <input type="text" name="uname" id="u" placeholder="Enter your name" minlength="3" maxlength="20" required autofocus autocomplete="on">
+    <br><br>
+    <label for="v">Email</label>
+    <input type="email" name="Eml" id="v" placeholder="Enter your email" minlength="12" maxlength="12" required autocomplete="on">
+    <br><br>
+    <label for="p">password</label>
+    <input type="password" name="pwd" id="p" placeholder="Enter your password" minlength="4" maxlength="4" required>
+    <br><br>
+    <label for="w">phone number</label>
+    <input type="number" name="phn" id="w" placeholder="Enter your phone no" minlength="10" maxlength="10" required>
+    <br><br>
+    Booking:-<input type="date" name="book" min="2025-09-07" max="2025-12-31">
+    <br><br>
+    Age:-<input type="number" name="age" min="1" max="100" step="1" value="18">
+    <br><br>
+    color:-<input type="color" name="fav" value="#ff0000">
+    <br><br>
+    Browser:-<input list="browsers" name="Browser">
+    <datalist id="browsers">
+        <option value="chrome">
+            <option value="microsoft edge">  
+        </option>
+        </option>
+    </datalist>
+    <br><br>
+    Branch
+    <select>
+        <option >CSE</option>
+        <option >IT</option>
+        <option >CS-IT</option>
+    </select>
+    <br><br>
+    <select name="Branch">
+        <option value="Branch" selected disabled>--Select Branch--</option>
+        <optgroup label="Computer">
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="CS-IT">CS-IT</option>
+    </optgroup>
+    <optgroup label="Other">
+        <option value="Civil">Civil</option>
+        <option value="EC">EC</option>
+        <option value="MEC">MEC</option>
+    </optgroup>
+    </select>
+    <br><br>
+    <label> Gender:-
+        <input type="radio" name="gender" value="male">male</label>
+        <label>    
+        <input type="radio" name="gender" value="female">female</label>
+        <br><br>
+        <label> Hobbies:-
+            <input type="checkbox" name="Hobbies" value="music">Music</label>
+            <label>    
+            <input type="checkbox" name="Hobbies" value="sports">Sports</label>
+            <br><br>
+            <textarea name="msg" placeholder="Enter  your message" cols="20" rows="5"></textarea>
+            <br><br>
+            <input type="range" name="volume" min="5" max="100" step="5">
+            <br><br>
+            <input type="reset">
+            <br><br>
+            <input type="button" value="click me">
+            <button >click</button>
+            <br><br>
+    <input type="submit">
+    </fieldset>
+</form>
