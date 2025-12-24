@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{background-color: rgb(64, 94, 190,0.2);margin-top: 50px;height: 800px;
+            border: 1px solid red;position: relative}
+        .test{margin-left: 20px;height: 100px;width: 100px;text-align: center;text-align: center;}    
+        #div1{background-color: rgba(167, 80, 238, 0.3);
+            position: static; top: 40px; left: 0; width: 98.5%; height: 100px;
+            border: 3px solid #73AD21}
+        #div2{background-color: rgba(127, 164, 219, 0.3);position: relative;bottom: 0px;right: 0; width: 200px; height: 100px; border: 3px solid #73AD21;}
+        #div3{background-color: rgba(235, 238, 86, 0.3);position: absolute; top: 40px; right: 0; width: 200px; height: 100px; border: 3px solid #73AD21;}
+        #div4{background-color: rgba(113, 219, 87, 0.3);position: fixed; top: 120px; left: 50px; width: 200px; height: 100px; border: 3px solid #73AD21}
+        .p{background-color: rgba(94, 55, 236, 0.3); position: absolute; border: 3px solid #73AD21; top:250px; right: 10px;}
+    </style>
+<head>
+<body>
+    <div class="container">
+        <div class="test" id="div1">This 1st div element has position: static; top: 40px; left: 0; width: 100%; height: 100px; border: 3px solid #73AD21</div>
+        <p class="p">This P element has position: relative; border: 3px solid #73AD21; top:150px; left: 350px; written before pre tag</p>
+        <pre>An element with position: absolute; is positioned
+            relative to the nearest
+           positioned ancestor 
+           (instead of positioned relative to the viewport, like fixed).
+         manydf
+         gapgear
+         fad
+         fgda
+         fgdf
+         gdf
+         gdaf
+         gdafg
+         fz
+         gb
+         fd
+         gbdgtrt
+         ghzfh
+         fgh
+         gfb
+         zdb
+         <area shape="" coords="" href="" alt="">
+         line
+         Left to sea effect of all this div's effect on web page. scroll slowly and</pre>
+        <div class="test" id="div2">This 2nddiv element has position: relative; written after pre tag but before 3rd and 4th div</div>
+        <div class="test" id="div3">This 3rddiv element has position: absolute; top: 80px; right: 0; width: 200px; height: 100px; border: 3px solid #73AD21;</div>
+        <div class="test" id="div4">This 4thdiv element has position: fix; top: 120px; left: 50px; width: 200px; height: 100px; border: 3px solid #73AD21;</div>
+    </div>
+</body>
+</html>

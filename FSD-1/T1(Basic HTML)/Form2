@@ -1,0 +1,36 @@
+<form action="#" method="post">
+    <fieldset>
+        <legend>sign up</legend>
+        <table>
+        <tbody>
+        <tr>
+        <td><label for="u">Username</label></td>
+        <td><input type="text" id="u" placeholder="Enter username" minlength="3" maxlength="20" required autofocus autocomplete="on"></td>
+        </tr>
+        <tr>
+        <td><label for="p">Password</label></td>
+        <td><input type="text" id="p" placeholder="Enter password" minlength="4" maxlength="4" required autofocus autocomplete="on"></td>
+    </tr>
+        <tr>
+        <td><label>Date</label></td>
+        <td><input type="date" name="date" min="2025-09-26" max="2025-12-31" required></td>
+    </tr>
+    <tr>
+        <td><label for="c">Contact number</label></td>
+        <td><input type="number" name="number" required></td>
+    </tr>
+    <tr>
+        <td>Email ID</td>
+        <td><input type="email" name="eml" required></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="other">other</td>
+    </tr>
+        <td><input type="submit"></td>
+        </tbody>
+        </table>
+    </fieldset>
+</form>
