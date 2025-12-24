@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            var emp=["jayveer","dhairya","nisarg"]
+            for (let i=0;i<emp.length;i++){
+                document.write(emp[i]+"<br>")
+            }
+
+            var n=[1,2,3,4,5]
+            for (let i=0;i<n.length;i++){
+                document.write("Multiplication with 2 ="+n[i]*2+"<br>")
+            }
+
+            let i=1
+            while(i<=5){
+                document.write(i+"<br>");
+                i++;
+            }
+
+            let fruit=["a","b","c"]
+            for (let f of fruit){
+                document.write(f+"<br>")
+            }
+
+            let user={name:"Jayveer",age:19,city:"Ahmedabad"}
+            for (let key in user){
+                document.write(key+":"+user[key]+"<br>")
+            }
+
+            let student=["A","B","C"]
+            for(let i in student){
+                console.log(i)
+                console.log(student[i])
+            }
+
+            var j=5
+            for (var j=0;j<2;j++){
+                console.log(j) // 0 1
+            }
+            console.log(j) // 2
+
+            let k=5
+            for (let k=0;k<2;k++){
+                console.log(k) // 0 1
+            }
+            console.log(k) // 5
+        </script>
+    </head>
+</html>

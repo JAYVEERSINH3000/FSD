@@ -1,0 +1,44 @@
+<!-- 
+1. push() : adds element at the end of array
+2. pop() : Remove last element 
+3. map() : Transform each array element
+4. filter() : Return who pass condition
+5. forEach() : Run for each element
+6. includes() : Check if value exists
+7. find() : find first element who match condition
+-->
+<html>
+    <head>
+        <script>
+            // 1.
+            let fruit=["A","B"]
+            fruit.push("C")
+            console.log(fruit)
+            // 2.
+            let num=[10,20,30]
+            let rem=num.pop()
+            console.log(rem)
+            console.log(num)
+            // 3.
+            let num1=[1,2,3,4]
+            let square=num1.map(num=>num*num)
+            console.log(square)
+            // 4.
+            let age=[12,18,25,43]
+            let adult=age.filter(age=>age>=18)
+            console.log(adult)
+            // 5.
+            let name=["Jayveer","jadu","NP"]
+            name.forEach(name=>{console.log("Hello "+name)})
+            // 6. 
+            let color=["red","green","yellow"]
+            console.log(color.include("green"))
+            console.log(color.include("tomato"))
+            // 7.
+            let user=[{id:1,name:"A"},{id:2,name:"B"},{id:3,name:"C"}]
+            let u=user.find(u=>u.id===2)
+            console.log(u)
+            console.log(user[2].name)
+        </script>
+    </head>
+</html>
