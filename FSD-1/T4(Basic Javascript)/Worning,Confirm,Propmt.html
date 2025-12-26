@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function worn(){
+                alert('I am warning')
+                document.write('You read warning')
+            }
+            function conf(){
+                let result=confirm('Do you agree?')
+                if (result==true){
+                    document.writeln('User agree')
+                    return true
+                }
+                else{
+                    document.writeln('User disagree')
+                    return false
+                }
+            }
+            function p(){
+                let info=prompt('Enter Name','username')
+                document.writeln(`Welcome ${info}`)
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="AlertBox" onclick="worn()">
+        <input type="button" value="confirm box" onclick="conf()">
+        <input type="button" value="useri/p" onclick="p()"></iinput>
+    </body>
+</html>
