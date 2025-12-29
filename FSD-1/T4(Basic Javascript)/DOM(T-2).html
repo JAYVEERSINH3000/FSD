@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            let i=0
+            function fun1(){
+                if (i%2==0){
+                    document.getElementById("img1").setAttribute("src","img1.jpeg")
+                    i+=1;
+                }
+                else{
+                    document.getElementById("img1").setAttribute("src","img2.jpeg")
+                    i+=1;
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <img id="img1">
+        <input type="button" onclick="fun1()" value="click">
+    </body>
+</html>
