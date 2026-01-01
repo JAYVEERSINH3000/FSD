@@ -1,0 +1,37 @@
+<!-- Write a JS to handle mouse events :
+1.If mouse is over heading it should turn yellow ,if mouse goes out it should turn black.
+2.If find time button is click than show time info.
+3.If button name red is click then bgcolor should turn red and button named green is click than bgcolor should turn green. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script>
+        function fun(e){
+            e.style.backgroundColor="Yellow"
+        }
+        function fun2(e){
+            e.style.backgroundColor="black"
+        }
+        function fun3(e){
+            d=new Date()
+            document.getElementById("demo").innerHTML=d
+        }
+        function fun4(e){
+            id=document.getElementById("bgd")
+            id.style.backgroundColor="red"
+        }
+        fun5=()=>{
+            id=document.getElementById("bgd")
+            id.style.backgroundColor="green"
+        }
+    </script>
+    </head>
+    <body id="bgd">
+        <h1 onmouseover="fun(this)" onmouseout="fun2(this)" >
+            <span style="color:cyan;">Hello</span></h1>
+        <input type="submit" value="Find time" onclick="fun3(this)">
+        <p id="demo"></p>
+        <input type="submit" value="Red" onclick="fun4(this)">
+        <input type="submit" value="Green" onclick="fun5(this)">
+    </body>
+</html>

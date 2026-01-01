@@ -1,0 +1,20 @@
+<!-- on key down
+on key pressed
+on key up -->
+<!-- Write HTML to perform task as below : 
+background color should turn red while key is down and it should turn blue when key is up. -->
+<html>
+    <head>
+        <script>
+            function fun(id){
+                id.style.backgroundColor="blue"
+            }
+            function fun1(id){
+                id.bgColor="red"
+            }
+        </script>
+    </head>
+    <body onkeyup="fun(this)" onkeydown="fun1(this)">
+        
+    </body>
+</html>

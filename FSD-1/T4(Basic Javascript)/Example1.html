@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div id="c" style="height:200px;width:200px;text-align:center;margin-left:42%;">
+        <h3 style="padding:44%;text-align: center;">Helloo</h3>
+    </div>
+    <input type="button" onclick="fun1()" value="click">
+    <script>
+        let i=0
+            function fun1(){
+                if (i%2==0){
+                    d=document.getElementById("c")
+                    d.style.backgroundColor="black"
+                    d.style.color="white"
+                    i+=1;
+                }
+                else{
+                    d=document.getElementById("c")
+                    d.style.backgroundColor="white"
+                    d.style.color="black"
+                    i+=1;
+                }
+            }
+    </script>
+</body>
+</html>

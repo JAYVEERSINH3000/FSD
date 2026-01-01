@@ -1,0 +1,20 @@
+<!-- Create 100x100 div box having default text Box1.Perform on mouse down,on mouse up event using function.
+    By clicking at the time of mouse down bgcolor is yellow and text is clickpress.
+    At the time of realising click bgcolor should be pink -->
+<html>
+    <head>
+        <script>
+            function fun(e){
+                e.innerHTML='Click pressed'
+                e.style.backgroundColor="Yellow"
+            }
+            function fun2(e){
+                e.innerHTML='Click released'
+                e.style.backgroundColor="Pink"
+            }
+        </script>
+    </head>
+    <body>
+        <div onmouseover="fun(this)" onmouseout="fun2(this)" style="height:100px;width:100px;background-Color:tomato">Box1</div>
+    </body>
+</html>

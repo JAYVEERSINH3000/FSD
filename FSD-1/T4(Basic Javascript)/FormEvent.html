@@ -1,0 +1,25 @@
+<!--on focus
+    on blur
+    on input
+    on change
+    on submit -->
+<html>
+    <head>
+        <script>
+            function fun(){
+                a=document.getElementById("a").value
+                alert("Welcome "+a)
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onfocus="this.style.backgroundColor='Yellow'">  <br><br>
+        <input type="text" onblur="this.style.backgroundColor='Pink'"> <br><br>
+        <input type="text" oninput="this.value=this.value.toUpperCase()">  <br><br>
+        <input type="text" onchange="this.value=this.value.toUpperCase()">  <br><br>
+        <form action="#" onsubmit="fun()">
+            Enter Name:<input type="text" name="fname" id="a">
+            <input type="submit" value="submit">
+        </form>
+    </body>
+</html>
