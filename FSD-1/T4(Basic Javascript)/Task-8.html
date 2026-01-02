@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Verification Form</title>
+</head>
+<body>
+
+<div class="form-container"
+     id="verificationForm"
+     onmouseover="changeBorderColor('gray')"
+     onmouseout="changeBorderColor('black')">
+
+    <h3>User Verification</h3>
+    
+    <label>Employee ID</label>
+    <input type="text" id="empId" oninput="checkEmployeeId()">
+
+    <label>Department Name</label>
+    <input type="text" id="deptName" onchange="changeDeptBackground()">
+
+    <button onclick="verifyUser()">Verify</button>
+    <button onclick="clearFields()">Clear Fields</button>
+    <button onclick="toggleBackground()">Toggle Background</button>
+</div>
+
+<script>
+    function checkEmployeeId() {
+        let empId = document.getElementById("empId");
+        let value = empId.value;
+        let isNumeric = true;
+
+        for (let i = 0; i < value.length; i++) {
+            if (value[i] < '0' || value[i] > '9') {
+                isNumeric = false;
+                break;
+            }
+        }
+
+        empId.style.color = isNumeric ? "black" : "red";
+    }
+
+    function changeDeptBackground() {
+        document.getElementById("deptName").style.backgroundColor = "lightyellow";
+    }
+
+    function changeBorderColor(color) {
+        document.getElementById("verificationForm").style.borderColor = color;
+    }
+
+    function clearFields() {
+        document.getElementById("empId").value = "";
+        document.getElementById("deptName").value = "";
+        document.getElementById("empId").style.color = "black";
+        document.getElementById("deptName").style.backgroundColor = "white";
+    }
+
+    function toggleBackground() {
+        let form = document.getElementById("verificationForm");
+        form.style.backgroundColor =
+            form.style.backgroundColor === "lightblue" ? "white" : "lightblue";
+    }
+
+    function verifyUser() {
+        alert("Verification button clicked!");
+    }
+</script>
+
+</body>
+</html>
