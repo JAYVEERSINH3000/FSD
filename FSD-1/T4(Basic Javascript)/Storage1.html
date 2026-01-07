@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+    </head>
+    <body>
+    <h2>Login</h2>
+    <input type="text" id="a">
+    <button onclick="saveU()">Save</button>
+    <button onclick="showU()">Show</button>
+    <button onclick="clearU()">Clear</button>
+    <p id="out"></p>
+    <script>
+            function saveU(){
+                let user=document.getElementById('a').value
+                localStorage.setItem("Username",user)
+                sessionStorage.setItem("Username",user)
+            }
+            function showU(){
+                let luser=localStorage.getItem("Username")
+                let suser=sessionStorage.getItem("Username")
+                document.getElementById('out').innerHTML="Local: "+luser+"<br>session: "+suser;
+            }
+            function clearU(){
+                localStorage.clear()
+                sessionStorage.clear()
+                document.getElementById('out').innerHTML="Cleared!"
+            }
+        </script>
+    </body>
+</html>
+Create a form with 3 fields product,price,discount  and save button which match following requirement: 
+1.When user click save:store the entered value in local stoage 
+2.After saving dislay a msg 'data saved successfully'
+3.Add another button remove discount that removes only discount field from local storage 
+4.After removal display remaining data in a console

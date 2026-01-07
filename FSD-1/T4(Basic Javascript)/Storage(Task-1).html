@@ -1,0 +1,49 @@
+<!-- Create a form with 3 fields product,price,discount  and save button which match following requirement: 
+1.When user click save:store the entered value in local stoage 
+2.After saving dislay a msg 'data saved successfully'
+3.Add another button remove discount that removes only discount field from local storage 
+4.After removal display remaining data in a console -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Product: <input type="text" id="p"><br><br>
+    Price: <input type="number" id="pr"><br><br>
+    Discount: <input type="number" id="dis"><br><br>
+    <button onclick="save()">Save</button>
+    <button onclick="rmdis()">Remove discount</button>
+    <button onclick="dis()">Discount</button>
+    <p id="a"></p>
+    <script>
+        function save(){
+            let pro=document.getElementById('p').value
+            let pri=document.getElementById('pr').value
+            let dis=document.getElementById('dis').value
+            localStorage.setItem("Product",pro)
+            localStorage.setItem("Price",pri)
+            localStorage.setItem("Discount",dis)
+            document.getElementById('a').innerHTML="Data saved successfully!"
+        }
+        function rmdis(){
+            let p1=localStorage.getItem("Product")
+            let p2=localStorage.getItem("Price")
+            console.log(p1)
+            console.log(p2)
+            document.getElementById('a').innerHTML="Product: "+p1+"<br>Price(Without discount): "+p2
+        }
+        function dis(){
+            let p1=localStorage.getItem("Product")
+            let p2=localStorage.getItem("Price")
+            let dis=localStorage.getItem("Discount")
+            console.log(p1)
+            console.log(p2)
+            document.getElementById('a').innerHTML="Product: "+p1+"<br>Price(After discount): "+(p2-dis)
+        }
+
+    </script>
+</body>
+</html>
