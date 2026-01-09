@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getDog()">Get Dog</button>
+    <img id="dogimg" width="300px" >
+    <script>
+        function getDog(){
+            fetch("https://dog.ceo/api/breeds/image/random")
+            .then(response=>response.json())
+            .then(data=>{
+                document.getElementById("dogimg").setAttribute("src",data.message)
+                console.log("Status: ",data.status)
+            })
+            .catch(error=>{
+                console.log("Error",error)
+            })
+        }
+    </script>
+</body>
+</html>
