@@ -8,7 +8,7 @@ var base=p.basename(mypath);
 //    else console.log("Created");
 // })
 var new_path=dir+"/"+base;
-fs.watchFile(new_path,"Hello",(e)=>{
+fs.writeFile(new_path,"Hello",(e)=>{
    if(e) throw e;
    else console.log("Written");
 })
