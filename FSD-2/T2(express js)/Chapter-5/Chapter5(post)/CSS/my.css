@@ -1,0 +1,11 @@
+h1{
+   color:blue;
+   text-align:center;
+   font-size: 55px;
+   text-decoration: underline black;
+}
+form{
+   border:5px;
+   border-color: black;
+   border-width: 2px;
+}
